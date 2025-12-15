@@ -1,4 +1,4 @@
-import React, { type MouseEvent, type ReactNode } from "react";
+import { type MouseEvent, type ReactNode } from "react";
 
 const Button = ({
     variant,

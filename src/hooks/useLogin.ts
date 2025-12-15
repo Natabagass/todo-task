@@ -23,9 +23,7 @@ export const useLogin = () => {
         navigate("/tasks", { replace: true });
     };
 
-    const handleLogout = (e: FormEvent) => {
-        e.preventDefault()
-
+    const handleLogout = () => {
         sessionStorage.removeItem("auth")
         navigate("/", { replace: true });
     }

@@ -32,7 +32,7 @@ const TasksPage = () => {
         <>
             <div className="tasks-wrapper">
                 <div className="header-bar">
-                    <Button onClick={() => handleLogout} size="md" variant="secondary">
+                    <Button type="button" onClick={handleLogout} size="md" variant="secondary">
                         Logout
                     </Button>
                 </div>
