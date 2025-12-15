@@ -54,19 +54,6 @@ Layout seperti search bar, task container, form input, dan modal otomatis menyes
 
 ---
 
-### 🔍 SEO Optimization — React Helmet
-Menggunakan **React Helmet** untuk:
-- Set **title** halaman
-- Set **meta description**
-- Optimalisasi SEO dasar untuk SPA
-
-Contoh meta tag:
-```jsx
-<Helmet>
-  <title>Task Management App</title>
-  <meta name="description" content="Simple Task Manager with CRUD and responsive UI" />
-</Helmet>
-
 # 📦 Installation & Setup
 
 Berikut langkah singkat untuk menjalankan project ini secara lokal:
@@ -102,3 +89,18 @@ yarn start
 - Node.js ≥ 18
 - Yarn atau npm
 - Browser
+
+---
+
+### 🔍 SEO Optimization — React Helmet
+Menggunakan **React Helmet** untuk:
+- Set **title** halaman
+- Set **meta description**
+- Optimalisasi SEO dasar untuk SPA
+
+Contoh meta tag:
+```jsx
+<Helmet>
+  <title>Task Management App</title>
+  <meta name="description" content="Simple Task Manager with CRUD and responsive UI" />
+</Helmet>
