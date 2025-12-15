@@ -12,7 +12,7 @@ const Text = ({
     className?: string;
     children: React.ReactNode;
     weight?: "light" | "normal" | "medium" | "semibold" | "bold";
-    size?: "sm" | "md" | "lg" | "xl";
+    size?: "sm" | "md" | "lg" | "xl" | "xl2" | "xl3" | "xl4";
     color?: "default" | "gray" | "danger" | "success" | "primary";
 }) => {
     return (

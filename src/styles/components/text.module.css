@@ -20,6 +20,18 @@
     font-size: 20px;
 }
 
+.text.xl2 {
+    font-size: 24px;
+}
+
+.text.xl3 {
+    font-size: 30px;
+}
+
+.text.xl4 {
+    font-size: 36px;
+}
+
 .text.light {
     font-weight: 300;
 }

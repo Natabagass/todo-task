@@ -16,7 +16,7 @@ const LoginPage = () => {
     return (
         <div className="login-wrapper">
             <div className="login-container">
-                <Text Type="h1" weight="bold" size="lg" className="login-title">
+                <Text Type="h1" weight="bold" size="xl2" className="login-title">
                     Login
                 </Text>
 
