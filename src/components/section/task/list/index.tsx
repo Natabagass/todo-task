@@ -1,6 +1,6 @@
-import Text from "../../ui/typography";
-import Button from "../../ui/button";
-import type { TaskItemProps } from "../../../types/task";
+import Text from "../../../ui/typography";
+import Button from "../../../ui/button";
+import type { TaskItemProps } from "../../../../types/task";
 
 const TaskItem = ({ task, onToggle, onEdit, onDelete }: TaskItemProps) => {
     return (

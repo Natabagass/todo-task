@@ -1,8 +1,8 @@
 import type { Dispatch, SetStateAction } from "react";
-import Button from "../../ui/button";
-import Input from "../../ui/input";
-import Modal from "../../ui/modal";
-import type { Task } from "../../../types/task";
+import Button from "../../../ui/button";
+import Input from "../../../ui/input";
+import Modal from "../../../ui/modal";
+import type { Task } from "../../../../types/task";
 
 const UpdateModalTask = ({
     editingTask,

@@ -2,12 +2,13 @@ import Text from "../../components/ui/typography";
 import Input from "../../components/ui/input";
 import Button from "../../components/ui/button";
 import { useTasks } from "../../hooks/useTasks";
-import TaskItem from "../../components/task/list";
-import UpdateModalTask from "../../components/task/modal";
+import TaskItem from "../../components/section/task/list";
+import UpdateModalTask from "../../components/section/task/modal";
 import { useLogin } from "../../hooks/useLogin";
+import Head from "../../config/head";
 
 const TasksPage = () => {
-    {/* Memanggil fungsi dan state yang akan digunakan */}
+    {/* Memanggil fungsi dan state yang akan digunakan */ }
     const {
         handleCreateTask,
         handleSearch,
@@ -31,6 +32,13 @@ const TasksPage = () => {
 
     return (
         <>
+            <Head
+                title="Task Management"
+                description="The all-in-one platform for managing task"
+                image="/assets/og-image.png"
+                url="https://todo-task.vercel.app/tasks"
+            />
+
             <div className="tasks-wrapper">
                 <div className="header-bar">
                     <Button type="button" onClick={handleLogout} size="md" variant="secondary">
