@@ -20,7 +20,7 @@ const LoginPage = () => {
                 title="Todo Task - Your easy managing partner"
                 description="The all-in-one platform for managing task"
                 image="/assets/og-image.png"
-                url="https://todo-task.vercel.app"
+                url="https://todo-task-six-omega.vercel.app"
             />
 
             <div className="login-wrapper">

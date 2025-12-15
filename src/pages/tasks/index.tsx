@@ -36,7 +36,7 @@ const TasksPage = () => {
                 title="Task Management"
                 description="The all-in-one platform for managing task"
                 image="/assets/og-image.png"
-                url="https://todo-task.vercel.app/tasks"
+                url="https://todo-task-six-omega.vercel.app/tasks"
             />
 
             <div className="tasks-wrapper">
