@@ -19,14 +19,14 @@ export const useLogin = () => {
             return;
         }
 
-        sessionStorage.setItem("auth", token);
+        sessionStorage.setItem("auth", `${import.meta.env.VITE_SECRET_KEY}${token}`);
         navigate("/tasks", { replace: true });
     };
 
-
     useEffect(() => {
-        const auth = localStorage.getItem("auth");
-        if (auth === "true") {
+        const token = sessionStorage.getItem("auth") || "";
+
+        if (token.startsWith(import.meta.env.VITE_SECRET_KEY)) {
             navigate("/tasks", { replace: true });
         }
     }, [navigate]);

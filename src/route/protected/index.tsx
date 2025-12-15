@@ -2,10 +2,10 @@ import type { ReactNode } from "react";
 import { Navigate } from "react-router-dom";
 
 const ProtectedRoute = ({ children }: { children: ReactNode }) => {
-    const auth = localStorage.getItem("auth");
+    const token = sessionStorage.getItem("auth");
 
-    if (!auth || auth !== "true") {
-        return <Navigate to="/tasks" replace />;
+    if (!token || !token.startsWith(import.meta.env.VITE_SECRET_KEY)) {
+        return <Navigate to="/" replace />;
     }
 
     return children;
