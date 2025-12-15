@@ -1,4 +1,4 @@
-# 📝 Task Management App — React 19
+# 📝 Task Management App
 
 A simple and responsive **Task Management Application** built with **React 19**, using **full custom CSS** (tanpa Tailwind), and **React Helmet** for SEO enhancements.
 
@@ -11,9 +11,12 @@ Aplikasi ini dibuat sebagai submission project yang mencakup fitur **Authenticat
 ### 🔐 Authentication (Dummy Login)
 Aplikasi menggunakan halaman login sederhana dengan akun dummy.
 
-**Placeholder Login Credentials:**
+**Login Credentials:**
 - **Username:** `dot@test.com`
 - **Password:** `dot12345`
+
+**ENV:**
+- **VITE_SECRET_KEY:** `asawasdw`
 
 Tidak menggunakan backend—hanya validasi dummy + penyimpanan sesi via `sessionStorage`.
 
