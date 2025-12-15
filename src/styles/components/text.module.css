@@ -1,6 +1,4 @@
-/* Base class */
 .text {
-    font-family: 'Merriweather', serif;
     color: #111827;
 }
 
@@ -61,7 +59,7 @@
 }
 
 .text.primary {
-    color: #2563eb;
+    color: #FEF1D2;
 }
 
 .text.danger {

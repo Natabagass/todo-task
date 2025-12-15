@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import { DUMMY_USER } from "../data/dummy/user";
 import { useNavigate } from "react-router-dom";
 
@@ -10,7 +10,7 @@ export const useLogin = () => {
     const [password, setPassword] = useState("");
     const [errMsg, setErrMsg] = useState("")
 
-    const handleLogin = (e: React.FormEvent) => {
+    const handleLogin = (e: FormEvent) => {
         e.preventDefault();
         const token = Math.random().toString(36).substring(2);
 
@@ -22,6 +22,13 @@ export const useLogin = () => {
         sessionStorage.setItem("auth", `${import.meta.env.VITE_SECRET_KEY}${token}`);
         navigate("/tasks", { replace: true });
     };
+
+    const handleLogout = (e: FormEvent) => {
+        e.preventDefault()
+
+        sessionStorage.removeItem("auth")
+        navigate("/", { replace: true });
+    }
 
     useEffect(() => {
         const token = sessionStorage.getItem("auth") || "";
@@ -35,6 +42,7 @@ export const useLogin = () => {
         setEmail,
         email,
         password,
+        handleLogout,
         errMsg,
         setPassword,
         handleLogin

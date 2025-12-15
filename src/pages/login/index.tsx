@@ -1,6 +1,6 @@
-import Text from "../../components/typography";
-import Input from "../../components/input";
-import Button from "../../components/button";
+import Text from "../../components/ui/typography";
+import Input from "../../components/ui/input";
+import Button from "../../components/ui/button";
 import { useLogin } from "../../hooks/useLogin";
 
 const LoginPage = () => {

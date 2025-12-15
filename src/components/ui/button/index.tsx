@@ -1,4 +1,4 @@
-import React from "react";
+import React, { type MouseEvent, type ReactNode } from "react";
 
 const Button = ({
     variant,
@@ -10,15 +10,15 @@ const Button = ({
     id,
     type = "button",
 }: {
-    variant?: "primary" | "secondary";
+    variant?: "primary" | "secondary" | "delete" | "edit";
     id?: string;
-    onClick?: (e?: React.MouseEvent<HTMLButtonElement>) => void;
+    onClick?: (e?: MouseEvent<HTMLButtonElement>) => void;
     disabled?: boolean;
     type?: "submit" | "button";
     className?: string;
     size?: string;
     padding?: string;
-    children?: React.ReactNode;
+    children?: ReactNode;
 }) => {
     return (
         <button

@@ -1,5 +1,13 @@
-@import url('./login/login.module.css');
+/* Pages Style */
+@import url('./pages/login.module.css');
+@import url('./pages/tasks.module.css');
 
+/* Component Style */
 @import url('./components/text.module.css');
+@import url('./components/modal.module.css');
 @import url('./components/input.module.css');
 @import url('./components/button.module.css');
+
+body {
+    background: #1F1F1F;
+}

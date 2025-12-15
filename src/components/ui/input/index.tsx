@@ -1,14 +1,15 @@
-import React from "react";
+import { type ChangeEvent, type KeyboardEvent } from "react";
 
 type InputProps = {
     label?: string;
     type?: string;
     value: string;
     placeholder?: string;
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
+    onKeyDown?: (e: KeyboardEvent<HTMLInputElement>) => void;
 };
 
-const Input = ({ label, type = "text", value, placeholder, onChange }: InputProps) => {
+const Input = ({ label, onKeyDown, type = "text", value, placeholder, onChange }: InputProps) => {
     return (
         <div className="input-group">
             {label && <label className="input-label">{label}</label>}
@@ -17,6 +18,7 @@ const Input = ({ label, type = "text", value, placeholder, onChange }: InputProp
                 value={value}
                 placeholder={placeholder}
                 onChange={onChange}
+                onKeyDown={onKeyDown}
                 className="input-field"
             />
         </div>
