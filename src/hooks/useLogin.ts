@@ -34,7 +34,7 @@ export const useLogin = () => {
     useEffect(() => {
         const token = sessionStorage.getItem("auth") || "";
 
-        if (token.startsWith(import.meta.env.VITE_SECRET_KEY)) {
+        if (token.startsWith(`${import.meta.env.VITE_SECRET_KEY}`)) {
             navigate("/tasks", { replace: true });
         }
     }, [navigate]);

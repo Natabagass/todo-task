@@ -6,7 +6,7 @@ const ProtectedRoute = ({ children }: { children: ReactNode }) => {
     const token = sessionStorage.getItem("auth");
 
     {/* Cek Token apakah sesuai */}
-    if (!token || !token.startsWith(import.meta.env.VITE_SECRET_KEY)) {
+    if (!token || !token.startsWith(`${import.meta.env.VITE_SECRET_KEY}`)) {
         return <Navigate to="/" replace />;
     }
 

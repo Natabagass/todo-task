@@ -15,9 +15,6 @@ Aplikasi menggunakan halaman login sederhana dengan akun dummy.
 - **Username:** `dot@test.com`
 - **Password:** `dot12345`
 
-**ENV:**
-- **VITE_SECRET_KEY:** `asawasdw`
-
 Tidak menggunakan backend—hanya validasi dummy + penyimpanan sesi via `sessionStorage`.
 
 ---
@@ -69,3 +66,39 @@ Contoh meta tag:
   <title>Task Management App</title>
   <meta name="description" content="Simple Task Manager with CRUD and responsive UI" />
 </Helmet>
+
+# 📦 Installation & Setup
+
+Berikut langkah singkat untuk menjalankan project ini secara lokal:
+
+### 1️⃣ Clone Repository
+git clone https://github.com/Natabagass/todo-task
+cd todo-task
+
+### 2️⃣ Install Dependencies
+Yarn (recommended):
+yarn install
+
+Atau npm:
+npm install
+
+### 3️⃣ Setup Environment Variables
+Buat file `.env` di root project lalu isi:
+VITE_SECRET_KEY=asawasdw
+
+### 4️⃣ Jalankan Development Server
+yarn dev
+
+Akses melalui browser:
+http://localhost:5173
+
+### 5️⃣ Build untuk Production
+yarn build
+
+### 6️⃣ Start untuk Production
+yarn start
+
+### ✔ Requirements
+- Node.js ≥ 18
+- Yarn atau npm
+- Browser
