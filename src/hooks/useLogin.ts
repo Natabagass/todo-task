@@ -3,6 +3,7 @@ import { DUMMY_USER } from "../data/dummy/user";
 import { useNavigate } from "react-router-dom";
 
 export const useLogin = () => {
+    {/* Ambil data dummy yang sudah dibuat */}
     const dummyAccount = DUMMY_USER
     const navigate = useNavigate();
 
@@ -10,6 +11,7 @@ export const useLogin = () => {
     const [password, setPassword] = useState("");
     const [errMsg, setErrMsg] = useState("")
 
+    {/* Logic handle user login */}
     const handleLogin = (e: FormEvent) => {
         e.preventDefault();
         const token = Math.random().toString(36).substring(2);
@@ -28,6 +30,7 @@ export const useLogin = () => {
         navigate("/", { replace: true });
     }
 
+    {/* Logic checking ketika user kembali ke halaman login */}
     useEffect(() => {
         const token = sessionStorage.getItem("auth") || "";
 

@@ -1,7 +1,7 @@
 import type { Dispatch, SetStateAction } from "react";
 import Button from "../../ui/button";
 import Input from "../../ui/input";
-import Modal from "../../ui/modal/update";
+import Modal from "../../ui/modal";
 import type { Task } from "../../../types/task";
 
 const UpdateModalTask = ({
@@ -29,6 +29,7 @@ const UpdateModalTask = ({
                 placeholder="Edit task..."
             />
 
+            {/* Button action save atau cancel edit */}
             <div style={{ marginTop: "12px", display: "flex", gap: "10px" }}>
                 <Button variant="primary" onClick={saveEdit}>Save</Button>
                 <Button variant="secondary" onClick={closeEditModal}>Cancel</Button>

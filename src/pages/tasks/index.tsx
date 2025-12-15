@@ -7,6 +7,7 @@ import UpdateModalTask from "../../components/task/modal";
 import { useLogin } from "../../hooks/useLogin";
 
 const TasksPage = () => {
+    {/* Memanggil fungsi dan state yang akan digunakan */}
     const {
         handleCreateTask,
         handleSearch,
@@ -74,6 +75,7 @@ const TasksPage = () => {
                 </div>
 
                 <div className="tasks-container">
+                    {/* Conditional Rendering tampilan task */}
                     {tasksToShow.length === 0 ? (
                         <div className="empty-wrapper">
                             <Text Type="span" className="empty-text">Belum ada task ditemukan</Text>

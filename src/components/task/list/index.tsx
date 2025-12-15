@@ -5,8 +5,8 @@ import type { TaskItemProps } from "../../../types/task";
 const TaskItem = ({ task, onToggle, onEdit, onDelete }: TaskItemProps) => {
     return (
         <div className="task-item">
-
             <div className="task-checkbox-wrapper">
+                {/* Input Checkbox untuk done task */}
                 <input
                     type="checkbox"
                     checked={task.completed}
@@ -22,6 +22,7 @@ const TaskItem = ({ task, onToggle, onEdit, onDelete }: TaskItemProps) => {
                 </Text>
             </div>
 
+            {/* Button action untuk mengatur task */}
             <div className="task-actions">
                 <Button variant="edit" size="sm" onClick={() => onEdit(task)}>
                     Edit
