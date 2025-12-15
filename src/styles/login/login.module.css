@@ -1,0 +1,33 @@
+/* Wrapper full height center */
+.login-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3f4f6;
+}
+
+.login-container {
+    width: 350px;
+    padding: 24px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.login-button {
+    width: 100%;
+    margin-top: 10px;
+}

@@ -1,0 +1,61 @@
+/* Base class */
+.text {
+    font-family: 'Merriweather', serif;
+    color: #111827;
+}
+
+.text.sm {
+    font-size: 12px;
+}
+
+.text.md {
+    font-size: 14px;
+}
+
+.text.lg {
+    font-size: 16px;
+}
+
+.text.xl {
+    font-size: 20px;
+}
+
+.text.light {
+    font-weight: 300;
+}
+
+.text.normal {
+    font-weight: 400;
+}
+
+.text.medium {
+    font-weight: 500;
+}
+
+.text.semibold {
+    font-weight: 600;
+}
+
+.text.bold {
+    font-weight: 700;
+}
+
+.text.default {
+    color: #111827;
+}
+
+.text.gray {
+    color: #6b7280;
+}
+
+.text.primary {
+    color: #2563eb;
+}
+
+.text.danger {
+    color: #dc2626;
+}
+
+.text.success {
+    color: #059669;
+}
